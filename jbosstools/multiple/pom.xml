@@ -85,6 +85,26 @@
 				</plugins>
 			</build>
 		</profile>
+		profile>
+                        <id>multiple2runnable</id>
+                        <build>
+                                <plugins>
+                                        <plugin>
+                                                <!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=389052  -->
+                                                <groupId>org.jboss.tools.tycho-plugins</groupId>
+                                                <artifactId>target-platform-utils</artifactId>
+                                                <executions>
+                                                        <execution>
+                                                                <phase>package</phase>
+                                                                <goals>
+                                                                        <goal>mirror-target-to-runnable</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                </plugins>
+                        </build>
+                </profile>
 	</profiles>
 
 </project>
