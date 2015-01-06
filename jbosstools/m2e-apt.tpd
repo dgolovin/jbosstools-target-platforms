@@ -1,0 +1,7 @@
+target "m2e-apt"
+
+with source requirements
+
+location "http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/1.1.1-2014-11-26_15-11-10-H37/" {
+ 	org.jboss.tools.maven.apt.feature.feature.group 1.1.1.201411262015
+ }

@@ -1,0 +1,74 @@
+target "Orbit"
+
+with source requirements
+
+location  "http://download.jboss.org/jbosstools/updates/requirements/orbit/R20140525021250/" {
+ 
+//  for these IUs we need multiple versions
+      javax.wsdl 1.6.2.v201012040545
+      javax.wsdl 1.5.1.v201012040544
+      org.jdom 1.1.1.v201101151400
+      org.jdom 1.0.0.v201005080400
+      org.apache.commons.lang 2.6.0.v201404270220
+      org.apache.commons.lang 2.4.0.v201005080502
+      org.apache.commons.lang 2.1.0.v201005080500
+      javax.servlet 3.0.0.v201112011016
+      javax.servlet 2.5.0.v201103041518
+      javax.servlet.jsp 2.2.0.v201112011158
+      javax.servlet.jsp 2.0.0.v201101211617
+      javax.wsdl 1.6.2.v201012040545
+      javax.wsdl 1.5.1.v201012040544
+      javax.xml.bind 2.2.0.v201105210648
+      javax.xml.bind 2.1.9.v201005080401
+      javax.xml.soap 1.3.0.v201105210645
+      javax.xml.soap 1.2.0.v201005080501
+      org.apache.commons.logging 1.1.1.v201101211721
+      org.apache.commons.logging 1.0.4.v201101211617
+      org.apache.lucene 2.9.1.v201101211721
+      org.apache.lucene 1.9.1.v201101211617
+      org.apache.lucene.core 3.5.0.v20120725-1805
+      org.apache.lucene.core 2.9.1.v201101211721
+      org.junit 4.11.0.v201303080030
+      org.junit 3.8.2.v3_8_2_v20130308-0410
+
+// Orbit bundles
+      javax.activation 1.1.0.v201211130549
+      org.apache.oro 2.0.8.v201005080400
+      org.apache.commons.io 2.0.1.v201105210651
+      org.apache.commons.codec 1.3.0.v201101211617
+      org.apache.commons.httpclient 3.1.0.v201012070820
+      org.hamcrest 1.1.0.v20090501071000
+//      org.hamcrest.core 1.1.0.v20090501071000
+//      org.hamcrest.text 1.1.0.v20090501071000
+//      org.hamcrest.library 1.1.0.v20090501071000
+//      org.hamcrest.integration 1.1.0.v201303031500
+      org.apache.httpcomponents.httpclient 4.1.2.v201203221030
+      org.apache.httpcomponents.httpcore 4.1.4.v201203221030
+      org.apache.axis 1.4.0.v201005080400
+      org.apache.commons.io 2.0.1.v201105210651
+      org.apache.commons.httpclient 3.1.0.v201012070820
+      org.apache.commons.codec 1.3.0.v201101211617
+      org.apache.jasper 7.0.26.v201205030742
+      org.apache.catalina 7.0.26.v201205021508
+      javax.ejb 3.1.1.v201204261316
+      javax.transaction 1.1.1.v201105210645
+      com.google.guava 15.0.0.v201403281430
+
+//      Needed by jbosstools-webservices
+      ch.qos.logback.classic 1.0.7.v20121108-1250
+      ch.qos.logback.core 1.0.7.v20121108-1250
+//		Needed by jbosstools-aerogear
+      com.google.gson 2.1.0.v201303041604
+
+//      Needed for Mylyn/Bugzilla
+      org.apache.xmlrpc 3.0.0.v20100427-1100
+      org.apache.ws.commons.util 1.0.1.v20100518-1140
+
+//      Servlet 3.0, Jetty 8 (JBIDE-13712 / http://www.eclipse.org/eclipse/development/porting/4.2/incompatibilities.php#jetty )
+      javax.el 2.2.0.v201303151357
+      com.sun.el 2.2.0.v201303151357
+      javax.xml.rpc 1.1.0.v201209140446
+      org.apache.jasper.glassfish 2.2.2.v201205150955
+//      ch.qos.logback.slf4j 1.0.7.v20121108-1250
+      org.slf4j.api 1.7.2.v20121108-1250
+}
